@@ -5,3 +5,66 @@
     box-sizing: border-box;
     font-family: 'Sevillana', cursive;
 }
+body{
+    background-color: bisque;
+    color:rgb(60, 9, 109);
+}
+.main {
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   width:50%;
+   background-color: rgb(210, 175, 175);
+   padding:40px;
+   border-radius: 5px;
+   box-shadow: 5px 5px 5px rgb(169, 82, 165);
+
+}
+h1{
+    font-size:30px;
+}
+h1::after{
+    content:"";
+    position:absolute;
+    top:80px;
+    background-color:rgb(5, 35, 33);
+    left:40px;
+    width:60px;
+   height:2px;
+  
+}
+blockquote{
+   font-size: 25px;
+   margin:10px;
+   padding:20px;
+   font-weight: 600;
+   color:rgb(28, 130, 101);
+}
+blockquote::before, blockquote::after{
+    content:'"';
+}
+span{
+    position:absolute;
+    right:0;
+    bottom:100px;
+    color:rgb(83, 83, 15);
+}
+span::before{
+    content:"-";
+}
+.footer{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+#quote-btn, #tweet-btn{
+    font-size:20px;
+    border:none;
+    outline:none;
+    border-radius: 50px;
+    padding:5px;
+    margin-top:50px;
+    background: linear-gradient(#350606,#585858);
+    color:rgb(249, 224, 247);
+}
